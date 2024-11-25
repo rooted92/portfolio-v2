@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        citrine: "var(--citrine)",
+        persimmon: "var(--persimmon)",
+        hookersGreen: "var(--hookers-green)",
+        licorice: "var(--licorice)",
+        honeydew: "var(--honeydew)",
       },
     },
   },

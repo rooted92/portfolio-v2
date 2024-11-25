@@ -5,6 +5,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Possible color pallets */
+  --citrine: #c6c013;
+  --persimmon: #f45d01;
+  --hookers-green: #648381;
+  --licorice: #191516;
+  --honeydew: #ecfff8;
 }
 
 @media (prefers-color-scheme: dark) {
