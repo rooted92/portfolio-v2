@@ -16,18 +16,6 @@ const NavBar = () => {
       href: '/',
       icon: 'icon-[tdesign--circle]',
     },
-    {
-      href: '/',
-      icon: 'icon-[proicons--github]',
-    },
-    {
-      href: '/',
-      icon: 'icon-[line-md--linkedin]',
-    },
-    {
-      href: '/',
-      icon: 'icon-[proicons--pdf]',
-    },
   ]
 
   return (
