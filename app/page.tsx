@@ -1,12 +1,4 @@
 import React from "react";
-import { Righteous } from "next/font/google";
-import Image from "next/image";
-// import Link from "next/link";
-
-const righteous = Righteous({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 export default function Home() {
 
