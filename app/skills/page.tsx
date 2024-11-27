@@ -1,9 +1,10 @@
 import React from 'react'
+import HeadingOne from '../ui/HeadingOne'
 
 const page = () => {
   return (
     <section>
-        <h1>Skills</h1>
+        <HeadingOne text="Skills" />
     </section>
   )
 }

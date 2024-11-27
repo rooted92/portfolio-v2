@@ -56,6 +56,14 @@ const Footer = () => {
           ))
         }
       </nav>
+      <nav>
+        <span className='sr-only'>link to accessibility statement</span>
+        <Link
+        href={'/accessibility'}
+        className='hover:text-persimmon transition-all ease-in text-sm'>
+          Accessibility
+          </Link>
+      </nav>
     </footer>
   )
 }
