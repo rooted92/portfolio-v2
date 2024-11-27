@@ -26,16 +26,16 @@ const NavBar = () => {
       icon: 'icon-[mdi--briefcase-account]',
     },
     {
-      href: '/certifications',
-      title: 'Certifications',
-      srOnly: true,
-      icon: 'icon-[lineicons--certificate]',
-    },
-    {
       href: '/projects',
       title: 'Projects',
       srOnly: true,
       icon: 'icon-[mdi--code-braces]',
+    },
+    {
+      href: '/certifications',
+      title: 'Certifications',
+      srOnly: true,
+      icon: 'icon-[lineicons--certificate]',
     },
     {
       href: '/skills',
