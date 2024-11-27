@@ -16,6 +16,12 @@ export default {
         licorice: "var(--licorice)",
         honeydew: "var(--honeydew)",
       },
+      screens: {
+        tiniest: '280px',
+        tiny: '320px',
+        xxs: '375px',
+        xs: '475px',
+      }
     },
   },
   plugins: [
