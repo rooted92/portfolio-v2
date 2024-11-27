@@ -8,7 +8,7 @@ interface FooterLink {
   targetBlank?: boolean,
   iconClasses?: string,
   linkClasses?: string,
-}
+};
 
 const Footer = () => {
 
@@ -36,13 +36,11 @@ const Footer = () => {
       title: 'Contact',
       icon: 'icon-[entypo--email]',
     },
-  ]
-
-  // icon-[tabler--social], icon-[pajamas--work]
+  ];
 
   return (
     <footer className='flex flex-col justify-center items-center py-8 container mx-auto'>
-      <nav className='flex items-center justify-center gap-8'>
+      <nav className='flex items-center justify-center gap-6 xxs:gap-8'>
         {
           links.map((link, index) => (
             <Link
@@ -66,6 +64,6 @@ const Footer = () => {
       </nav>
     </footer>
   )
-}
+};
 
 export default Footer

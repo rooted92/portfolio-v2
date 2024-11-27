@@ -47,7 +47,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className='flex justify-center items-center gap-8 p-8'>
+      <nav className='flex justify-center items-center gap-6 xxs:gap-8 p-8'>
         {
           links.map((link, index) => (
             <Link
