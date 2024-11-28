@@ -12,7 +12,7 @@ interface HeadingOneProps {
 
 const HeadingOne = ({text}: HeadingOneProps) => {
   return (
-    <h1 className={`${righteous.className} text-2xl mb-4`}>{text}</h1>
+    <h1 className={`${righteous.className} text-2xl mb-2`}>{text}</h1>
   )
 }
 
