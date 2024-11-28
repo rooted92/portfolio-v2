@@ -15,8 +15,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <Link href={'/experience/freelance'} className='underline decoration-citrine underline-offset-2 decoration-2 hover:underline-offset-4 hover:decoration-persimmon transition-all ease-in text-lg'>Freelance</Link>
         </div>
       </div>
-      <div className="self-center">
-        {children}
+      {children}
+      <div>
+        Here is more information about my experience.
       </div>
     </section>
   )
