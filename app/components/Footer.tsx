@@ -1,5 +1,7 @@
+'use client';
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface FooterLink {
   href: string,
@@ -11,6 +13,7 @@ interface FooterLink {
 };
 
 const Footer = () => {
+  const pathname = usePathname();
 
   const links: FooterLink[] = [
     {
@@ -36,31 +39,34 @@ const Footer = () => {
       title: 'Contact',
       icon: 'icon-[entypo--email]',
     },
+    {
+      href: '/accessibility',
+      title: 'Accessibility',
+      icon: 'icon-[proicons--accessibility]'
+    }
   ];
 
   return (
     <footer className='flex flex-col justify-center items-center py-8 container mx-auto'>
       <nav className='flex items-center justify-center gap-6 xxs:gap-8'>
         {
-          links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.href}
-              title={link.title}
-              target={link.targetBlank ? '_blank' : '_self'}
-              className={`text-2xl hover:text-persimmon hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
-              <i className={`${link.icon} ${link.iconClasses}`} role="img" aria-hidden="true" />
-            </Link>
-          ))
+          links.map((link, index) => {
+
+            const isActive = pathname === link.href;
+            console.log(isActive)
+            console.log(pathname)
+
+            return (
+              <Link
+                key={index}
+                href={link.href}
+                title={link.title}
+                target={link.targetBlank ? '_blank' : '_self'}
+                className={`text-2xl hover:text-persimmon ${isActive ? 'text-persimmon' : ''} hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
+                <i className={`${link.icon} ${link.iconClasses}`} role="img" aria-hidden="true" />
+              </Link>)
+          })
         }
-      </nav>
-      <nav>
-        <span className='sr-only'>link to accessibility statement</span>
-        <Link
-        href={'/accessibility'}
-        className='hover:text-persimmon transition-all ease-in text-sm'>
-          Accessibility
-          </Link>
       </nav>
     </footer>
   )

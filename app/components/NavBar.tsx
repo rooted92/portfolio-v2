@@ -1,5 +1,7 @@
+'use client';
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 
 interface NavBarLink {
   href: string,
@@ -11,6 +13,8 @@ interface NavBarLink {
 }
 
 const NavBar = () => {
+
+  const pathname = usePathname();
 
   const links: NavBarLink[] = [
     {
@@ -43,16 +47,20 @@ const NavBar = () => {
     <header>
       <nav className='flex justify-center items-center gap-6 xxs:gap-8 p-8'>
         {
-          links.map((link, index) => (
+          links.map((link, index) => {
+
+            const isActive = pathname === link.href;
+            
+            return (
             <Link
               key={index}
               href={link.href}
               title={link.title}
-              className={`text-2xl hover:text-citrine hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
+              className={`text-2xl hover:text-citrine ${isActive ? 'text-citrine' : ''}  hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
                 {link.srOnly && <span className='sr-only'> link to {link.title}</span>}
               <i className={`${link.icon} ${link.iconClasses}`} role="img" aria-hidden="true" />
             </Link>
-          ))
+          )})
         }
       </nav>
     </header>
