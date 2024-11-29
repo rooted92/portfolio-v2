@@ -1,11 +1,5 @@
 import React from 'react'
-import { Righteous } from 'next/font/google'
 import HeadingOne from '../ui/HeadingOne'
-
-const righteous = Righteous({
-  subsets: ['latin'],
-  weight: ['400'],
-})
 
 const page = () => {
   return (
