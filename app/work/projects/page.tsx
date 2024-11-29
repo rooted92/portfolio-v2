@@ -1,5 +1,5 @@
 import React from 'react'
-import HeadingOne from '../ui/HeadingOne'
+import HeadingOne from '../../ui/HeadingOne'
 
 const page = () => {
   return (

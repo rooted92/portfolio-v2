@@ -7,9 +7,9 @@ const Tabs = () => {
     const pathname = usePathname();
 
     const tabs = [
-        { name: "Overview", href: "/experience" },
-        { name: "Freelance", href: "/experience/freelance" },
         { name: "TFE", href: "/experience/tfe" },
+        { name: "Freelance", href: "/experience/freelance" },
+        { name: "Projects", href: "/experience/projects" },
     ];
 
     return (
@@ -23,7 +23,7 @@ const Tabs = () => {
                         key={tab.name}
                         href={tab.href}
                         className={`flex-1 text-center py-2 ${isActive
-                            ? "border-b-2 border-citrine text-citrine"
+                            ? "border-b-2 border-persimmon text-citrine"
                             : "text-hookersGreen hover:text-citrine"
                             }`}
                     >

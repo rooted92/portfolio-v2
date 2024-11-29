@@ -20,16 +20,10 @@ const NavBar = () => {
       icon: 'icon-[tdesign--circle]',
     },
     {
-      href: '/experience',
+      href: '/work',
       title: 'Experience',
       srOnly: true,
       icon: 'icon-[mdi--briefcase-account]',
-    },
-    {
-      href: '/projects',
-      title: 'Projects',
-      srOnly: true,
-      icon: 'icon-[mdi--code-braces]',
     },
     {
       href: '/certifications',
