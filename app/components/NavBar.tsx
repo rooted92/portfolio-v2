@@ -21,7 +21,7 @@ const NavBar = () => {
     },
     {
       href: '/work',
-      title: 'Experience',
+      title: 'Work',
       srOnly: true,
       icon: 'icon-[mdi--briefcase-account]',
     },
