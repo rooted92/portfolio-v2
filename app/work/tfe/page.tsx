@@ -5,12 +5,7 @@ const page = () => {
   return (
     <section>
         <HeadingOne text='Trinchero Family Estates' />
-        <div className="flex flex-col">
-                <h2>Sutter Home</h2>
-            </div>
-            <div className="flex flex-col">
-                <h2>Neyers Vineyards</h2>
-            </div>
+        At Trinchero Family Estates, I worked with a talented team to improve web accessibility, raising WCAG 2.1 AA compliance to 97%. I also developed custom WordPress solutions and collaborated on enhancing functionality for multiple brand websites.<p></p>
     </section>
   )
 }

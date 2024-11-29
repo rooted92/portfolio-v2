@@ -1,5 +1,6 @@
 import React from 'react'
 import { Righteous } from 'next/font/google'
+import HeadingOne from '../ui/HeadingOne'
 
 const righteous = Righteous({
   subsets: ['latin'],
@@ -9,12 +10,12 @@ const righteous = Righteous({
 const page = () => {
   return (
     <>
-    <h2 className={`${righteous.className} text-xl font-semibold`}>Hello World,</h2>
-    <p>
-      This is paragraph is to talk about my experience. This is paragraph is to talk about my experience. This is paragraph is to talk about my experience. This is paragraph is to talk about my experience.This is paragraph is to talk about my experience.This is paragraph is to talk about my experience.This is paragraph is to talk about my experience.This is paragraph is to talk about my experience. This is paragraph is to talk about my experience. This is paragraph is to talk about my experience. This is paragraph is to talk about my experience.
-    </p>
+      <HeadingOne text='Hello World,' />
+      <p>
+        I&apos;m a passionate web developer skilled in WordPress, PHP, and JavaScript. I&apos;ve enhanced web accessibility at Trinchero Family Estates and built dynamic websites for mechanics, leveraging modern tools like Next.js and TypeScript.
+      </p>
     </>
-      
+
   )
 }
 
