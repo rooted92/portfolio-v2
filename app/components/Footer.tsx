@@ -53,8 +53,6 @@ const Footer = () => {
           links.map((link, index) => {
 
             const isActive = pathname === link.href;
-            console.log(isActive)
-            console.log(pathname)
 
             return (
               <Link
