@@ -37,7 +37,7 @@ const Tabs = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center xs:flex-row xs:border-b xs:border-persimmon mb-6 w-full transition-all ease-in">
+        <div className="grid grid-cols-2 sm:flex sm:border-b border-persimmon mb-6 w-11/12 sm:w-9/12 lg:w-7/12 transition-all ease-in">
             {tabs.map((tab) => {
                 const isActive = pathname === tab.href;
                 return (

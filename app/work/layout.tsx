@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <HeadingOne text='Work' />
 
       <Tabs />
-      <section className='max-w-2xl'>
+      <section className=' tiniest:mx-4 sm:w-8/12 lg:w-6/12 flex flex-col justify-center items-center'>
         {children}
       </section>
     </section>
