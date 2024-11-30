@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${ubuntuMono.className} antialiased bg-honeydew text-licorice dark:bg-licorice dark:text-honeydew flex flex-col min-h-screen`}
       >
         <NavBar />
-        <main className="flex-auto flex flex-col items-center justify-center text-balance">
+        <main className="flex-grow flex flex-col items-center justify-center text-balance">
           {children}
         </main>
         <Footer />

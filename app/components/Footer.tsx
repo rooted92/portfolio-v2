@@ -29,8 +29,9 @@ const Footer = () => {
       icon: 'icon-[line-md--linkedin]',
     },
     {
-      href: '/',
+      href: '/pc-resume.pdf',
       title: 'Resume',
+      targetBlank: true,
       icon: 'icon-[proicons--pdf]',
     },
 
