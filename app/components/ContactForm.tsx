@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
     return (
-        <form action="99d3304219d9eb6c7a52532b58295e3b" className='my-8 flex flex-col justify-center items-center gap-8 w-64 xxs:w-80 sm:w-96 xl:w-[40rem] xxs:mx-2'>
+        <form action="https://formsubmit.co/99d3304219d9eb6c7a52532b58295e3b" method='POST' className='my-8 flex flex-col justify-center items-center gap-8 w-64 xxs:w-80 sm:w-96 xl:w-[40rem] xxs:mx-2'>
             <div className="flex flex-col xs:flex-row justify-between items-center gap-4 w-full">
                 <input type="text" placeholder='First Name' className='border-b border-b-persimmon focus:outline-persimmon rounded-t focus:rounded focus:border-none outline-none bg-honeydew dark:bg-licorice p-2 w-full' />
                 <input type="text" placeholder='Last Name' className='border-b border-b-persimmon focus:outline-persimmon rounded-t focus:rounded focus:border-none outline-none bg-honeydew dark:bg-licorice p-2 w-full' />
