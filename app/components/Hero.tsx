@@ -32,7 +32,7 @@ const Hero = () => {
             <Image src={"/pedro.jpg"} alt="Photo of Pedro Castaneda" width={2000} height={2000} className="h-32 w-32 lg:h-40 lg:w-40 object-cover object-top rounded-full" />
             <div className="flex flex-col justify-center sm:justify-start items-center sm:items-start">
                 <h1 className={`${righteous.className} font-bold tracking-wider text-2xl tiny:text-3xl xxs:text-4xl sm:text-5xl lg:text-6xl`}>Pedro Castaneda</h1>
-                <p className=" text-center text-sm tiny:text-md xxs:text-lg sm:text-base lg:text-lg bg-gradient-to-r from-citrine to-persimmon bg-transparent bg-clip-text text-transparent font-semibold">Full Stack Developer / Freelancer / Available For Hire</p>
+                <p className=" text-center text-sm tiny:text-md xxs:text-lg sm:text-base lg:text-lg bg-gradient-to-r from-citrine to-persimmon bg-transparent bg-clip-text text-transparent font-semibold">Full Stack Developer / Freelancer</p>
                 <div className="flex gap-3 mt-2">
                     {
                         icons.map((icon, index) => (
