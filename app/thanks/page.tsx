@@ -9,7 +9,7 @@ const page = () => {
                 <i className="icon-[material-symbols--done-all-rounded] text-4xl text-citrine" role="img" aria-hidden="true" />
             </div>
 
-            <p>I'll get back to you as soon as possible.</p>
+            <p>I&apos;ll get back to you as soon as possible.</p>
         </section>
     )
 }
