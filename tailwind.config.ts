@@ -25,6 +25,12 @@ export default {
       }
     },
   },
+  variants: {
+    extend: {
+      backgroundColor: ['autofill'],
+      textColor: ['autofill'],
+    },
+  },
   plugins: [
     addDynamicIconSelectors(),
   ],
