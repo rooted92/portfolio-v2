@@ -12,8 +12,8 @@ const ContactForm = () => {
 
             <textarea placeholder='Message' className='border-b border-b-persimmon rounded-t focus:outline-persimmon focus:rounded focus:border-none outline-none bg-honeydew dark:bg-licorice w-full' rows={5} />
 
-            <input type="hidden" name="_next" value="http://localhost:3000/thanks" />
-            
+            <input type="hidden" name="_next" value="https://pcdev.vercel.app/thanks" />
+
             <button type='submit' className='bg-persimmon rounded w-full p-2 mt-2 lowercase font-semibold text-lg text-licorice dark:text-honeydew hover:opacity-90 hover:w-1/3 transition-all ease-in duration-300'>Submit</button>
         </form>
     )
