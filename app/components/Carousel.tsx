@@ -24,7 +24,7 @@ const Carousel = ({ items }: CarouselProps) => {
   return (
     <div className="relative w-full max-w-screen-lg mx-auto">
       {/* Carousel Container */}
-      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded shadow shadow-sm shadow-licorice">
+      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded shadow-sm shadow-licorice">
         <div
           className={`flex transition-transform duration-500`}
           style={{
@@ -51,7 +51,7 @@ const Carousel = ({ items }: CarouselProps) => {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-persimmon bg-opacity-50 text-white p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
+        className="absolute top-1/2 left-2 -translate-y-1/2 bg-licorice bg-opacity-50 text-honeydew p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
       >
         <i
           className="icon-[icon-park-outline--left-one]"
@@ -61,7 +61,7 @@ const Carousel = ({ items }: CarouselProps) => {
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
+        className="absolute top-1/2 right-2 -translate-y-1/2 bg-licorice bg-opacity-50 text-honeydew p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
       >
         <i
           className="icon-[icon-park-outline--right-one]"
@@ -78,8 +78,8 @@ const Carousel = ({ items }: CarouselProps) => {
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full ${
               index === currentIndex
-                ? "bg-gray-800"
-                : "bg-gray-400 opacity-75 hover:opacity-100"
+                ? "bg-persimmon"
+                : "bg-persimmon opacity-75 hover:opacity-100"
             }`}
           />
         ))}
@@ -96,7 +96,7 @@ const Carousel = ({ items }: CarouselProps) => {
               <img
                 src={item}
                 alt={`Mobile Slide ${index}`}
-                className="w-full h-full object-cover rounded-md"
+                className="w-full h-full object-cover rounded-md shadow shadow-licorice"
               />
             </div>
           ))}
