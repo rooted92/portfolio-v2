@@ -17,11 +17,11 @@ const page = () => {
       </p>
 
       <ul className='flex flex-col justify-center items-start gap-4 pb-8 mb-4 border-b border-b-citrine'>
-        <li><span className='font-bold list-none'>Semantic HTML:</span> I use well-structured HTML to provide meaningful navigation and enhance usability for assistive technologies like screen readers.</li>
-        <li><span className='font-bold list-none'>Keyboard Navigation:</span> All interactive elements, such as links, buttons, and forms, can be accessed and operated using a keyboard.</li>
-        <li><span className='font-bold list-none'>Responsive Design:</span> The website is designed to adapt to various screen sizes and orientations, providing a seamless experience for users on all devices.</li>
-        <li><span className='font-bold list-none'>Color Contrast:</span> I have carefully chosen color schemes to ensure sufficient contrast for readability, benefiting users with visual impairments.</li>
-        <li><span className='font-bold list-none'>Accessible Forms:</span> My contact form, powered by FormSubmit, is designed with appropriate labels and focus states for accessibility.</li>
+        <li><div className="flex items-center gap-2 text-citrine"><i className="icon-[whh--html]" role="img" aria-hidden="true" /> <span className='font-bold list-none'>Semantic HTML:</span></div> I use well-structured HTML to provide meaningful navigation and enhance usability for assistive technologies like screen readers.</li>
+        <li><div className="flex items-center gap-2 text-citrine"><i className="icon-[gravity-ui--keyboard]" role="img" aria-hidden="true" /><span className='font-bold list-none'>Keyboard Navigation:</span></div> All interactive elements, such as links, buttons, and forms, can be accessed and operated using a keyboard.</li>
+        <li><div className="flex items-center gap-2 text-citrine"><i className="icon-[material-symbols--responsive-layout-rounded]" role="img" aria-hidden="true" /><span className='font-bold list-none'>Responsive Design:</span></div> The website is designed to adapt to various screen sizes and orientations, providing a seamless experience for users on all devices.</li>
+        <li><div className="flex items-center gap-2 text-citrine"><i className="icon-[si-glyph--contrast]" role="img" aria-hidden="true" /><span className='font-bold list-none'>Color Contrast:</span></div> I have carefully chosen color schemes to ensure sufficient contrast for readability, benefiting users with visual impairments.</li>
+        <li><div className="flex items-center gap-2 text-citrine"><i className="icon-[tabler--forms]" role="img" aria-hidden="true" /><span className='font-bold list-none'>Accessible Forms:</span></div> My contact form, powered by FormSubmit, is designed with appropriate labels and focus states for accessibility.</li>
       </ul>
 
       <h2 className='text-xl text-persimmon mb-4 font-semibold'>Third-Party Services</h2>
@@ -40,7 +40,7 @@ const page = () => {
       </p>
 
       <h2 className='text-xl text-persimmon mb-4 font-semibold'>Ongoing Commitment</h2>
-      <p className='pb-8 mb-4 border-b border-b-citrine'>
+      <p className='pb-8 mb-4'>
         Accessibility is an ongoing process, and I am dedicated to improving my website to meet evolving accessibility standards and user needs. Thank you for helping me create a more inclusive digital experience for everyone.
       </p>
     </section>
