@@ -24,7 +24,7 @@ const Carousel = ({ items }: CarouselProps) => {
   return (
     <div className="relative w-full max-w-screen-lg mx-auto">
       {/* Carousel Container */}
-      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded">
+      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded shadow shadow-sm shadow-licorice">
         <div
           className={`flex transition-transform duration-500`}
           style={{
