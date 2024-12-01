@@ -24,7 +24,7 @@ const Carousel = ({ items }: CarouselProps) => {
   return (
     <div className="relative w-full max-w-screen-lg mx-auto">
       {/* Carousel Container */}
-      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded shadow-sm shadow-licorice">
+      <div className="hidden sm:block overflow-hidden relative w-auto max-h-[400px] rounded shadow-sm shadow-licorice">
         <div
           className={`flex transition-transform duration-500`}
           style={{
@@ -41,7 +41,7 @@ const Carousel = ({ items }: CarouselProps) => {
                 alt={`Slide ${index}`}
                 width={2000}
                 height={2000}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain object-top"
               />
             </div>
           ))}
@@ -91,12 +91,12 @@ const Carousel = ({ items }: CarouselProps) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-[80%] h-[300px] flex-shrink-0 bg-gray-200 flex items-center justify-center rounded-md snap-start my-2"
+              className="w-auto h-[300px] flex-shrink-0 bg-transparent flex items-center justify-center rounded-md snap-start my-2"
             >
               <img
                 src={item}
                 alt={`Mobile Slide ${index}`}
-                className="w-full h-full object-cover rounded-md shadow shadow-licorice"
+                className="w-full h-full object-cover object-top rounded-md shadow shadow-licorice"
               />
             </div>
           ))}
