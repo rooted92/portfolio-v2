@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import {Ubuntu_Mono} from "next/font/google";
+import { Ubuntu_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Head from "next/head";
 
 const ubuntuMono = Ubuntu_Mono({
   subsets: ["latin"],
@@ -20,16 +21,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${ubuntuMono.className} antialiased bg-honeydew text-licorice dark:bg-licorice dark:text-honeydew flex flex-col min-h-screen`}
-      >
-        <NavBar />
-        <main className="flex-grow flex flex-col items-center justify-center text-balance">
-          {children}
-        </main>
-        <Footer />
-      </body>
-    </html>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
+      <html lang="en">
+        <body
+          className={`${ubuntuMono.className} antialiased bg-honeydew text-licorice dark:bg-licorice dark:text-honeydew flex flex-col min-h-screen`}
+        >
+          <NavBar />
+          <main className="flex-grow flex flex-col items-center justify-center text-balance">
+            {children}
+          </main>
+          <Footer />
+        </body>
+      </html>
+    </>
+
   );
 }
