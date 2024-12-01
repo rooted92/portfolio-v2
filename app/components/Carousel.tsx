@@ -91,7 +91,7 @@ const Carousel = ({ items }: CarouselProps) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-[80%] h-[300px] flex-shrink-0 bg-gray-200 flex items-center justify-center rounded-md snap-start"
+              className="w-[80%] h-[300px] flex-shrink-0 bg-gray-200 flex items-center justify-center rounded-md snap-start pb-4"
             >
               <img
                 src={item}
