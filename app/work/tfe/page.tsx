@@ -10,11 +10,15 @@ const page = () => {
       <HeadingOne text='Trinchero Family Estates' />
       <p>At TFE, I worked with a talented team to improve web accessibility for <Link href={'https://www.sutterhome.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Sutter Home</strong></Link> and <Link href={'https://www.neyersvineyards.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'><strong>Neyers Vineyards</strong></Link>, raising WCAG 2.1 AA compliance to 97%. I also developed custom WordPress solutions and collaborated on enhancing functionality for multiple brand websites.</p>
       
-      <div className="flex flex-col items-center my-6">
+      <div className="flex flex-col items-center mt-6 mb-16">
         <Image src='/sutterhome.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4' />
         <Carousel items={['/sh-screenshot-one.png', '/sh-screenshot-two.png']} />
       </div>
     
+      <div className="flex flex-col items-center mt-6">
+        <Image src='/neyers.png' alt='neyers vineyards logo' width={2000} height={2000} className='h-20 w-auto mb-4' />
+        <Carousel items={['/neyers-screenshot-one.png', '/neyers-screenshot-two.png']} />
+      </div>
 
       <div className="border-t border-t-persimmon mt-20 mb-8 py-8 px-4">
           <blockquote className='text-lg mb-4'>&ldquo;Pedro is highly knowledgeable in web accessibility and takes pride in his coding skills. His positive attitude and strong work ethic make him a valuable asset to any team.&rdquo;</blockquote>
