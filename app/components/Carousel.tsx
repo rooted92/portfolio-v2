@@ -24,7 +24,7 @@ const Carousel = ({ items }: CarouselProps) => {
   return (
     <div className="relative w-full max-w-screen-lg mx-auto">
       {/* Carousel Container */}
-      <div className="overflow-hidden relative w-full max-h-[400px]">
+      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded">
         <div
           className={`flex transition-transform duration-500`}
           style={{
@@ -34,7 +34,7 @@ const Carousel = ({ items }: CarouselProps) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 bg-gray-200 flex items-center justify-center h-[400px]"
+              className="w-full flex-shrink-0 bg-hondeydew dark:bg-licorice flex items-center justify-center h-[400px]"
             >
               <Image
                 src={item}
@@ -51,7 +51,7 @@ const Carousel = ({ items }: CarouselProps) => {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75"
+        className="absolute top-1/2 left-2 -translate-y-1/2 bg-persimmon bg-opacity-50 text-white p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
       >
         <i
           className="icon-[icon-park-outline--left-one]"
@@ -61,7 +61,7 @@ const Carousel = ({ items }: CarouselProps) => {
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75"
+        className="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
       >
         <i
           className="icon-[icon-park-outline--right-one]"
