@@ -71,7 +71,7 @@ const Carousel = ({ items }: CarouselProps) => {
       </button>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="hidden sm:block absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {items.map((_, index) => (
           <button
             key={index}
@@ -91,7 +91,7 @@ const Carousel = ({ items }: CarouselProps) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-[80%] h-[300px] flex-shrink-0 bg-gray-200 flex items-center justify-center rounded-md snap-start py-2"
+              className="w-[80%] h-[300px] flex-shrink-0 bg-gray-200 flex items-center justify-center rounded-md snap-start my-2"
             >
               <img
                 src={item}
