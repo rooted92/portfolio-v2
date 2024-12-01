@@ -11,7 +11,8 @@ const page = () => {
       <p>At TFE, I worked with a talented team to improve web accessibility for <Link href={'https://www.sutterhome.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Sutter Home</strong></Link> and <Link href={'https://www.neyersvineyards.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'><strong>Neyers Vineyards</strong></Link>, raising WCAG 2.1 AA compliance to 97%. I also developed custom WordPress solutions and collaborated on enhancing functionality for multiple brand websites.</p>
       
       <div className="flex flex-col items-center mt-6 mb-16">
-        <Image src='/sutterhome.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4' />
+        <Image src='/sutterhome.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 hidden dark:block' />
+        <Image src='/sutterhome-black.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 block dark:hidden' />
         <Carousel items={['/sh-screenshot-one.png', '/sh-screenshot-two.png']} />
       </div>
     
