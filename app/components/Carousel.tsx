@@ -1,12 +1,16 @@
 'use client';
 import React, { useState } from "react";
 import Image from "next/image";
+import { headers } from "next/headers";
 
 interface CarouselProps {
-  items: string[];
+  items: string[],
+  objectType?: string,
+  width?: string,
+  height?: string,
 }
 
-const Carousel = ({ items }: CarouselProps) => {
+const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -41,7 +45,7 @@ const Carousel = ({ items }: CarouselProps) => {
                 alt={`Slide ${index}`}
                 width={2000}
                 height={2000}
-                className="w-full h-full object-contain object-top"
+                className={`${width} ${height} object-${objectType} object-top`}
               />
             </div>
           ))}
@@ -91,12 +95,12 @@ const Carousel = ({ items }: CarouselProps) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-auto h-[300px] flex-shrink-0 bg-transparent flex items-center justify-center rounded-md snap-start my-2"
+              className={`${width} h-[300px] flex-shrink-0 bg-transparent flex items-center justify-center rounded-md snap-start my-2`}
             >
               <img
                 src={item}
                 alt={`Mobile Slide ${index}`}
-                className="w-full h-full object-cover object-top rounded-md shadow shadow-licorice"
+                className={`w-full h-full ${objectType} object-top rounded-md shadow shadow-licorice`}
               />
             </div>
           ))}

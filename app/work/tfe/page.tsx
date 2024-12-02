@@ -13,12 +13,12 @@ const page = () => {
       <div className="flex flex-col items-center mt-6 mb-16">
         <Image src='/sutterhome.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 hidden dark:block' />
         <Image src='/sutterhome-black.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 block dark:hidden' />
-        <Carousel items={['/sh-screenshot-one.png', '/sh-screenshot-two.png']} />
+        <Carousel width='w-[80%]' height='h-auto' objectType='object-cover' items={['/sh-screenshot-one.png', '/sh-screenshot-two.png']} />
       </div>
     
       <div className="flex flex-col items-center mt-6">
         <Image src='/neyers.png' alt='neyers vineyards logo' width={2000} height={2000} className='h-20 w-auto mb-4' />
-        <Carousel items={['/neyers-screenshot-one.png', '/neyers-screenshot-two.png']} />
+        <Carousel width='w-[80%]' height='h-auto' objectType='object-cover' items={['/neyers-screenshot-one.png', '/neyers-screenshot-two.png']} />
       </div>
 
       <div className="border-t border-t-persimmon mt-20 mb-8 py-8 px-4">
