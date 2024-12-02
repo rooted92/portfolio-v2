@@ -2,14 +2,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+interface CarouselItem {
+  src: string;
+  alt: string;
+}
 interface CarouselProps {
-  items: string[],
-  objectType?: string,
-  width?: string,
-  height?: string,
+  items: CarouselItem[],
 }
 
-const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
+const Carousel = ({ items }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -27,7 +28,7 @@ const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
   return (
     <div className="relative w-full max-w-screen-lg mx-auto">
       {/* Carousel Container */}
-      <div className="hidden sm:block overflow-hidden relative w-auto max-h-[400px] rounded shadow-sm shadow-licorice">
+      <div className="hidden sm:block overflow-hidden relative w-full max-h-[400px] rounded shadow-sm shadow-licorice">
         <div
           className={`flex transition-transform duration-500`}
           style={{
@@ -40,11 +41,11 @@ const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
               className="w-full flex-shrink-0 bg-hondeydew dark:bg-licorice flex items-center justify-center h-[400px]"
             >
               <Image
-                src={item}
-                alt={`Slide ${index}`}
+                src={item.src}
+                alt={item.alt}
                 width={2000}
                 height={2000}
-                className={`${width} ${height} object-${objectType} object-top`}
+                className={`w-full h-full object-cover object-top`}
               />
             </div>
           ))}
@@ -94,14 +95,14 @@ const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className={`${width} h-[300px] flex-shrink-0 bg-transparent flex items-center justify-center rounded-md snap-start my-2`}
+              className={`w-[80%] h-[300px] flex-shrink-0 bg-transparent flex items-center justify-center rounded-md snap-start my-2`}
             >
               <Image
-                src={item}
-                alt={`Mobile Slide ${index}`}
+                src={item.src}
+                alt={item.alt}
                 width={2000}
                 height={2000}
-                className={`w-full h-full ${objectType} object-top rounded-md shadow shadow-licorice`}
+                className={`w-full h-full object-cover object-top rounded-md shadow shadow-licorice`}
               />
             </div>
           ))}

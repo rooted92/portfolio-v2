@@ -13,12 +13,26 @@ const page = () => {
       <div className="flex flex-col items-center mt-6 mb-16">
         <Image src='/sutterhome.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 hidden dark:block' />
         <Image src='/sutterhome-black.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 block dark:hidden' />
-        <Carousel width='w-[80%]' height='h-auto' objectType='object-cover' items={['/sh-screenshot-one.png', '/sh-screenshot-two.png']} />
+        <Carousel items={[
+          {src: '/sh-home.png', alt: 'Sutter Home home page'},
+          {src: '/sh-recipes.png', alt: 'Sutter Home recipes page'},
+          {src: '/sh-wines.png', alt: 'Sutter Home wines page'},
+          {src: '/sh-wines-cart.png', alt: 'Sutter Home wines page with cart items displayed'},
+          {src: '/sh-cart.png' , alt: 'Sutter Home cart page'},
+          {src: '/sh-checkout.png', alt: 'Sutter Home checkout page'},
+          {src: '/sh-roots.png', alt: 'Sutter Home roots page'},
+          {src: '/sh-locate.png', alt: 'Sutter Home locate retailer page'}]} />
       </div>
     
       <div className="flex flex-col items-center mt-6">
         <Image src='/neyers.png' alt='neyers vineyards logo' width={2000} height={2000} className='h-20 w-auto mb-4' />
-        <Carousel width='w-[80%]' height='h-auto' objectType='object-cover' items={['/neyers-screenshot-one.png', '/neyers-screenshot-two.png']} />
+        <Carousel items={[
+          {src: '/nv-home.png', alt: 'Neyers Vineyards home page'},
+          {src: '/nv-wines.png', alt: 'Neyers Vineyards wines page'},
+          {src: '/nv-clubs.png', alt: 'Neyers Vineyards wine clubs page'},
+          {src: '/nv-locate.png', alt: 'Neyers Vineyards locate retailer page'},
+          {src: '/nv-visit.png', alt: 'Neyers Vineyards visit page'},
+          {src: '/nv-about.png', alt: 'Neyers Vineyards about page'}]} />
       </div>
 
       <div className="border-t border-t-persimmon mt-20 mb-8 py-8 px-4">
