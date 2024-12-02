@@ -99,6 +99,8 @@ const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
               <Image
                 src={item}
                 alt={`Mobile Slide ${index}`}
+                width={2000}
+                height={2000}
                 className={`w-full h-full ${objectType} object-top rounded-md shadow shadow-licorice`}
               />
             </div>
