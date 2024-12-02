@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from "react";
 import Image from "next/image";
-import { headers } from "next/headers";
 
 interface CarouselProps {
   items: string[],
@@ -97,7 +96,7 @@ const Carousel = ({ items, objectType, width, height }: CarouselProps) => {
               key={index}
               className={`${width} h-[300px] flex-shrink-0 bg-transparent flex items-center justify-center rounded-md snap-start my-2`}
             >
-              <img
+              <Image
                 src={item}
                 alt={`Mobile Slide ${index}`}
                 className={`w-full h-full ${objectType} object-top rounded-md shadow shadow-licorice`}
