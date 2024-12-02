@@ -1,8 +1,8 @@
 import React from 'react'
 
 interface Icon {
-    icon: string,
-    iconClasses: string
+    name: string,
+    iconClasses?: string
 }
 
 interface IconsProps {
@@ -14,7 +14,7 @@ const Icons = ({iconItems}: IconsProps) => {
         <div className="flex gap-3 mt-2">
             {
                 iconItems.map((iconItem, index) => (
-                    <i key={index} className={`${iconItem.icon} ${iconItem.iconClasses} text-hookersGreen text-2xl`} role="img" aria-hidden="true" />
+                    <i key={index} className={`${iconItem.name} ${iconItem.iconClasses} text-hookersGreen text-2xl`} role="img" aria-hidden="true" />
                 ))
             }
         </div>

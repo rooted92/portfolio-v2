@@ -3,12 +3,25 @@ import React from 'react'
 import Link from 'next/link'
 import Carousel from '@/app/components/Carousel'
 import Image from 'next/image'
+import Icons from '@/app/ui/Icons'
 
 const page = () => {
+
+  const icons = [
+    { name: 'icon-[simple-icons--wordpress]' },
+    { name: 'icon-[simple-icons--php]' },
+    { name: 'icon-[simple-icons--javascript]' },
+    { name: 'icon-[streamline--css-three-solid]' },
+    { name: 'icon-[simple-icons--wpengine]' },
+    { name: 'icon-[simple-icons--bootstrap]' },
+  ]
+
   return (
     <section>
       <HeadingOne text='Trinchero Family Estates' />
       <p className='text-pretty'>At TFE, I worked with a talented team to improve web accessibility for <Link href={'https://www.sutterhome.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Sutter Home</strong></Link> and <Link href={'https://www.neyersvineyards.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'><strong>Neyers Vineyards</strong></Link>, raising WCAG 2.1 AA compliance to 97%. I also developed custom WordPress solutions and collaborated on enhancing functionality for multiple brand websites.</p>
+
+      <Icons iconItems={icons} />
       
       <div className="flex flex-col items-center mt-6 mb-16">
         <Image src='/sutterhome.png' alt='sutter home logo' width={2000} height={2000} className='h-20 w-auto mb-4 hidden dark:block' />
