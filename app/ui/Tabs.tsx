@@ -44,7 +44,7 @@ const Tabs = () => {
                     <Link
                         key={tab.name}
                         href={tab.href}
-                        className={`flex-1 flex items-center gap-2 text-center py-2 pl-2 sm:pl-0 ${isActive
+                        className={`flex-1 flex items-center justify-center sm:justify-start  gap-2 text-center py-2 pl-2 sm:pl-0 ${isActive
                             ? "border-b-2 border-persimmon text-citrine"
                             : "text-hookersGreen hover:text-citrine"
                             } transition-all ease-in`}
