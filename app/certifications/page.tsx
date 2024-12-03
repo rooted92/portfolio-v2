@@ -44,7 +44,7 @@ const page = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 sm:mt-16 mx-4">
         {
           certs.map(cert => (
-            <Cert cert={cert} />))
+            <Cert key={cert.title} cert={cert} />))
         }
       </div>
     </section>
