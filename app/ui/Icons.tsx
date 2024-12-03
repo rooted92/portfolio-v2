@@ -5,13 +5,16 @@ interface Icon {
     iconClasses?: string
 }
 
+
+
 interface IconsProps {
     iconItems: Icon[]
+    additonalClasses?: string
 }
 
-const Icons = ({iconItems}: IconsProps) => {
+const Icons = ({iconItems, additonalClasses = 'flex gap-3 mt-2'}: IconsProps) => {
     return (
-        <div className="flex gap-3 mt-2">
+        <div className={`${additonalClasses}`}>
             {
                 iconItems.map((iconItem, index) => (
                     <i key={index} className={`${iconItem.name} ${iconItem.iconClasses} text-hookersGreen text-2xl`} role="img" aria-hidden="true" />
