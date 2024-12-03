@@ -37,7 +37,7 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
                 {/* Tabs */}
                 <button
                     onClick={() => handleFilter(null)} // Show all skills
-                    className={`flex-1 flex items-center justify-center sm:justify-start gap-2 py-2 ${activeTab === null
+                    className={`col-span-2 flex-1 flex items-center justify-center sm:justify-start gap-2 py-2 ${activeTab === null
                         ? 'border-b-2 border-persimmon text-citrine'
                         : 'text-hookersGreen hover:text-citrine'
                         } transition-all ease-in`}
@@ -65,7 +65,7 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
                     name: skill.iconName,
                     iconClasses: skill.iconClasses,
                 }))}
-                additonalClasses='flex flex-wrap items-center justify-center gap-8 w-8/12'
+                additonalClasses='flex flex-wrap items-center justify-center gap-8 xs:gap-10 w-8/12 md:w-1/2'
             />
 
         </>
