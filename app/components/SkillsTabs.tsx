@@ -1,7 +1,9 @@
 'use client';
 import React from 'react'
 import { useState } from 'react';
-import Icons from '../ui/Icons';
+// import Icons from '../ui/Icons';
+import Link from 'next/link';
+import SkillIcon from '../ui/SkillIcon';
 
 interface Tab {
     name: string;
@@ -13,6 +15,7 @@ interface Tab {
 interface Skill {
     name: string;
     tag: string;
+    url: string;
     iconName: string;
     iconClasses?: string;
 }
@@ -60,13 +63,13 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
                     </button>
                 ))}
             </div>
-            <Icons
-                iconItems={filteredSkills.map((skill) => ({
-                    name: skill.iconName,
-                    iconClasses: skill.iconClasses,
-                }))}
-                additonalClasses='flex flex-wrap items-center justify-center gap-6 xxs:gap-8 xs:gap-10 w-11/12 xxs:w-8/12 md:w-1/2'
-            />
+            <div className='flex flex-wrap items-center justify-center gap-6 xxs:gap-8 xs:gap-10 w-11/12 xxs:w-8/12 md:w-1/2'>
+                {
+                    filteredSkills.map((skill) => (
+                        <SkillIcon key={skill.name} icon={skill} />
+                    ))
+                }
+            </div>
 
         </>
     )
