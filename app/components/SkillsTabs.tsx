@@ -1,8 +1,6 @@
 'use client';
 import React from 'react'
 import { useState } from 'react';
-// import Icons from '../ui/Icons';
-import Link from 'next/link';
 import SkillIcon from '../ui/SkillIcon';
 
 interface Tab {

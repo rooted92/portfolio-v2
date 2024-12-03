@@ -1,7 +1,6 @@
 import React from 'react'
 import HeadingOne from '../ui/HeadingOne'
 import SkillsTabs from '../components/SkillsTabs'
-import { url } from 'inspector'
 
 const page = () => {
 
