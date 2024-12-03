@@ -33,7 +33,7 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
 
     return (
         <>
-            <div className="grid grid-cols-2 sm:flex sm:border-b border-persimmon mb-6 w-11/12 sm:w-9/12 lg:w-7/12 transition-all ease-in">
+            <div className="grid grid-cols-2 sm:flex sm:border-b border-persimmon mb-6 w-11/12 sm:w-9/12 transition-all ease-in">
                 {/* Tabs */}
                 <button
                     onClick={() => handleFilter(null)} // Show all skills
@@ -65,7 +65,7 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
                     name: skill.iconName,
                     iconClasses: skill.iconClasses,
                 }))}
-                additonalClasses='flex flex-wrap items-center justify-center gap-8 xs:gap-10 w-8/12 md:w-1/2'
+                additonalClasses='flex flex-wrap items-center justify-center gap-6 xxs:gap-8 xs:gap-10 w-11/12 xxs:w-8/12 md:w-1/2'
             />
 
         </>
