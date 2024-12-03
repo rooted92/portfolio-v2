@@ -70,8 +70,19 @@ const page = () => {
       tag: 'cms',
       iconName: 'icon-[simple-icons--wordpress]',
       iconClasses: 'text-blue-500'
+    },
+    {
+      name: 'PHP',
+      tag: 'cms',
+      iconName: 'icon-[simple-icons--php]',
+      iconClasses: 'text-blue-500'
+    },
+    {
+      name: 'WP Engine',
+      tag: 'cms',
+      iconName: 'icon-[simple-icons--wpengine]',
+      iconClasses: 'text-blue-500'
     }
-    
   ]
   return (
     <section className='container mx-auto flex flex-col items-center'>
