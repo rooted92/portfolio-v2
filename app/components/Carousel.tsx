@@ -55,7 +55,7 @@ const Carousel = ({ items }: CarouselProps) => {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-licorice bg-opacity-50 text-honeydew p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
+        className="absolute top-1/2 left-2 -translate-y-1/2 bg-hookersGreen bg-opacity-50 text-honeydew p-2 rounded-full z-10 focus:outline-none hover:scale-110 hidden sm:block transition-all ease-in"
       >
         <i
           className="icon-[icon-park-outline--left-one]"
@@ -65,7 +65,7 @@ const Carousel = ({ items }: CarouselProps) => {
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-licorice bg-opacity-50 text-honeydew p-2 rounded-full z-10 focus:outline-none hover:bg-opacity-75 hidden sm:block"
+        className="absolute top-1/2 right-2 -translate-y-1/2 bg-hookersGreen bg-opacity-50 text-honeydew p-2 rounded-full z-10 focus:outline-none hover:scale-110 hidden sm:block transition-all ease-in"
       >
         <i
           className="icon-[icon-park-outline--right-one]"
@@ -80,11 +80,11 @@ const Carousel = ({ items }: CarouselProps) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full ${
+            className={`w-4 h-4 rounded-full hover:-translate-y-1 hover:scale-110 ${
               index === currentIndex
                 ? "bg-persimmon"
                 : "bg-persimmon opacity-75 hover:opacity-100"
-            }`}
+            } transition-all ease-in`}
           />
         ))}
       </div>
