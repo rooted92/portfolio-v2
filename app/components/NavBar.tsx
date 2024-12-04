@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 interface NavBarLink {
   href: string,
   title: string,
-  srOnly?: boolean,
+  ariaLabelText: string,
   icon: string,
   iconClasses?: string,
   linkClasses?: string,
@@ -20,25 +20,25 @@ const NavBar = () => {
     {
       href: '/',
       title: 'Home',
-      srOnly: true,
+      ariaLabelText: 'Home page',
       icon: 'icon-[tdesign--circle]',
     },
     {
       href: '/work',
       title: 'Work',
-      srOnly: true,
+      ariaLabelText: 'Work page',
       icon: 'icon-[mdi--briefcase-account]',
     },
     {
       href: '/certifications',
       title: 'Certifications',
-      srOnly: true,
+      ariaLabelText: 'Certifications page',
       icon: 'icon-[lineicons--certificate]',
     },
     {
       href: '/skills',
       title: 'Skills',
-      srOnly: true,
+      ariaLabelText: 'Skills page',
       icon: 'icon-[icon-park-outline--kungfu]',
     },
   ]
@@ -56,9 +56,10 @@ const NavBar = () => {
               key={index}
               href={link.href}
               title={link.title}
+              aria-label={link.ariaLabelText}
+              aria-current={isActive ? 'page' : undefined}
               className={`text-2xl hover:text-citrine ${isActive ? 'text-citrine' : ''}  hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
-                {link.srOnly && <span className='sr-only'> link to {link.title}</span>}
-              <i className={`${link.icon} ${link.iconClasses}`} role="img" aria-hidden="true" />
+              <i className={`${link.icon} ${link.iconClasses}`} aria-hidden="true" />
             </Link>
           )})
         }
