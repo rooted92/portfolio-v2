@@ -20,25 +20,25 @@ const NavBar = () => {
     {
       href: '/',
       title: 'Home',
-      ariaLabelText: 'Home page',
+      ariaLabelText: 'Home',
       icon: 'icon-[tdesign--circle]',
     },
     {
       href: '/work',
       title: 'Work',
-      ariaLabelText: 'Work page',
+      ariaLabelText: 'Work',
       icon: 'icon-[mdi--briefcase-account]',
     },
     {
       href: '/certifications',
       title: 'Certifications',
-      ariaLabelText: 'Certifications page',
+      ariaLabelText: 'Certifications',
       icon: 'icon-[lineicons--certificate]',
     },
     {
       href: '/skills',
       title: 'Skills',
-      ariaLabelText: 'Skills page',
+      ariaLabelText: 'Skills',
       icon: 'icon-[icon-park-outline--kungfu]',
     },
   ]
@@ -50,18 +50,19 @@ const NavBar = () => {
           links.map((link, index) => {
 
             const isActive = pathname === link.href;
-            
+
             return (
-            <Link
-              key={index}
-              href={link.href}
-              title={link.title}
-              aria-label={link.ariaLabelText}
-              aria-current={isActive ? 'page' : undefined}
-              className={`text-2xl hover:text-citrine ${isActive ? 'text-citrine' : ''}  hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
-              <i className={`${link.icon} ${link.iconClasses}`} aria-hidden="true" />
-            </Link>
-          )})
+              <Link
+                key={index}
+                href={link.href}
+                title={link.title}
+                aria-label={link.ariaLabelText}
+                aria-current={isActive ? 'page' : undefined}
+                className={`text-2xl hover:text-citrine ${isActive ? 'text-citrine' : ''}  hover:-translate-y-1 hover:scale-125 ${link.linkClasses} transition-all ease-in`}>
+                <i className={`${link.icon} ${link.iconClasses}`} aria-hidden="true" />
+              </Link>
+            )
+          })
         }
       </nav>
     </header>
