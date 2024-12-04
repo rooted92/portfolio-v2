@@ -85,7 +85,6 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
                     ))
                 }
             </div>
-
         </>
     )
 }

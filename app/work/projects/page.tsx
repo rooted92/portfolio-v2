@@ -27,7 +27,9 @@ const page = () => {
       </div>
 
       <div className="flex flex-col items-center mt-6">
-        <h2 className='text-3xl mb-4'><span className="icon-[ion--moon]" role="img" aria-hidden="true"></span> Luna Link</h2>
+        
+        <h2 className='text-3xl mb-4 flex items-center gap-2'><span className="icon-[ion--moon]" role="img" aria-hidden="true"></span> Luna Link</h2>
+        
         <Carousel items={
           [
             { src: '/luna-home.png', alt: 'Luna Link home page' },
