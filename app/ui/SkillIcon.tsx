@@ -15,8 +15,15 @@ interface SkillIconProps {
 
 const SkillIcon = ({ icon }: SkillIconProps) => {
     return (
-        <Link href={icon.url} title={icon.name} target='_blank' className='text-licorice dark:text-honeydew hover:text-citrine border-b-2 hover:border-b-transparent border-b-persimmon hover:scale-125 text-3xl transition-all ease-linear'>
-            <i className={`${icon.iconName} ${icon.iconClasses}  `} role="img" aria-hidden="true" />
+        <Link
+            href={icon.url}
+            title={icon.name}
+            target='_blank'
+            aria-label={`Visit ${icon.name} official website. Opens in new tab.`}
+            className='text-licorice dark:text-honeydew hover:text-citrine border-b-2 hover:border-b-transparent border-b-persimmon hover:scale-125 text-3xl transition-all ease-linear'>
+            <i
+                className={`${icon.iconName} ${icon.iconClasses}  `} role="img"
+                aria-hidden="true" />
         </Link>
     )
 }

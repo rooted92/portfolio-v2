@@ -223,7 +223,7 @@ const page = () => {
     }
   ]
   return (
-    <section className='container mx-auto flex flex-col items-center'>
+    <section aria-label='Skills categorized by frontend, backend WordPress and tools' className='container mx-auto flex flex-col items-center'>
       <HeadingOne text="Skills" />
       <SkillsTabs tabs={tabs} skills={skills} />
     </section>
