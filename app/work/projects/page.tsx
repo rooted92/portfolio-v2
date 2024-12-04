@@ -17,7 +17,10 @@ const page = () => {
   return (
     <section aria-label='Projects Overview'>
       <HeadingOne text="Projects" />
-      <p className='text-pretty'><Link href={'https://github.com/rooted92/trucker-app-sandbox'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Luna Link</strong><span className='sr-only'>(link to codebase on github for Luna Link, opens in new tab)</span></Link> is a fleet management tool designed to track trailers across multiple yards. Initially built using the MERN stack with EJS, the project is now transitioning to a React-based, production-ready version. It aims to streamline fleet logistics by offering intuitive tracking and management capabilities.</p>
+      <p className='text-pretty'><Link
+      href={'https://github.com/rooted92/trucker-app-sandbox'} target='_blank'
+      aria-label='View the Luna Link project codebase on GitHub. Opens in new tab.'
+      className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Luna Link</strong></Link> is a fleet management tool designed to track trailers across multiple yards. Initially built using the MERN stack with EJS, the project is now transitioning to a React-based, production-ready version. It aims to streamline fleet logistics by offering intuitive tracking and management capabilities.</p>
 
       <div className='flex gap-3 mt-2'>
         <Icons iconItems={icons} />
