@@ -13,10 +13,58 @@ const page = () => {
 
   const certs: Certs[] = [
     {
+      url: '/learn-react.pdf',
+      title: 'React Certification, Codecademy',
+      imgSrc: '/learnreact.png',
+      imgAlt: 'React Certification, Codecademy'
+    },
+    {
+      url: '/learn-js-objects.pdf',
+      title: 'JavaScript Objects, Codecademy',
+      imgSrc: '/learnjsobjects.png',
+      imgAlt: 'JavaScript Objects Certification, Codecademy'
+    },
+    {
+      url: '/learn-js-iterators.pdf',
+      title: 'JavaScript Iterators, Codecademy',
+      imgSrc: '/learnjsiterators.png',
+      imgAlt: 'JavaScript Iterators Certification, Codecademy'
+    },
+    {
+      url: '/learn-javascript.pdf',
+      title: 'JavaScript Certification, Codecademy',
+      imgSrc: '/learnjavascript.png',
+      imgAlt: 'JavaScript Certification, Codecademy'
+    },
+    {
+      url: '/learn-html.pdf',
+      title: 'HTML Certification, Codecademy',
+      imgSrc: '/learnhtml.png',
+      imgAlt: 'HTML Certification, Codecademy'
+    },
+    {
+      url: '/learn-css-accessibility.pdf',
+      title: 'CSS Certification, Codecademy',
+      imgSrc: '/learncssaccessibility.png',
+      imgAlt: 'CSS Certification, Codecademy'
+    },
+    {
+      url: '/learn-csharp.pdf',
+      title: 'C# Certification, Codecademy',
+      imgSrc: '/learn-csharp.png',
+      imgAlt: 'C# Certification, Codecademy'
+    },
+    {
       url: '/udemy-ghactions.pdf',
       title: 'GitHub Actions',
       imgSrc: '/udemy-ghactions.png',
       imgAlt: 'GitHub Actions certification'
+    },
+    {
+      url: '/learn-php.pdf',
+      title: 'Learn PHP, Codecademy',
+      imgSrc: '/learnphp.png',
+      imgAlt: 'PHP Intro Certification, Codecademy'
     },
     {
       url: '/php-wordpress.pdf',
@@ -41,7 +89,7 @@ const page = () => {
   return (
     <section className='flex flex-col items-center'>
       <HeadingOne text="Certifications" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 sm:mt-16 mx-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 sm:mt-16 mx-4">
         {
           certs.map(cert => (
             <Cert key={cert.title} cert={cert} />))
