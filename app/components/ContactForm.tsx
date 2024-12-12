@@ -62,7 +62,7 @@ const ContactForm = () => {
 
                 <button
                     type='submit'
-                    className='bg-persimmon rounded w-full p-2 mt-2 font-semibold text-lg text-licorice dark:text-honeydew hover:bg-citrine transition-all ease-in'
+                    className='bg-persimmon rounded w-full p-2 mt-2 font-semibold text-lg text-licorice dark:text-honeydew hover:opacity-85 transition-all ease-linear'
                     aria-label='Submit the contact form'>Submit</button>
             </form>
         </section>

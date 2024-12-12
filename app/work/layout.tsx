@@ -5,7 +5,7 @@ import Tabs from '../ui/Tabs'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className='flex flex-col justify-center items-center container mx-auto'>
+    <section className='flex flex-col items-center container mx-auto'>
       <HeadingOne text='Work' />
 
       <Tabs />

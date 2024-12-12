@@ -22,6 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <>
       <html lang="en">
@@ -29,7 +30,7 @@ export default function RootLayout({
           className={`${ubuntuMono.className} antialiased bg-honeydew text-licorice dark:bg-licorice dark:text-honeydew flex flex-col min-h-screen`}
         >
           <NavBar />
-          <main className="flex-grow flex flex-col items-center justify-center text-balance">
+          <main className='text-balance flex-1 flex justify-center'>
             {children}
           </main>
           <Footer />
