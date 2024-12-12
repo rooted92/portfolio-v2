@@ -220,7 +220,13 @@ const page = () => {
       tag: 'backend',
       url: 'https://www.json.org/json-en.html',
       iconName: 'icon-[tabler--json]',
-    }
+    },
+    {
+      name: 'ChatGPT',
+      tag: 'tools',
+      url: 'https://platform.openai.com/docs/models/chatgpt',
+      iconName: 'icon-[arcticons--openai-chatgpt]',
+    },
   ]
   return (
     <section aria-label='Skills categorized by frontend, backend WordPress and tools' className='container mx-auto flex flex-col items-center'>
