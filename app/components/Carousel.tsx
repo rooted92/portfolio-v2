@@ -80,7 +80,7 @@ const Carousel = ({ items }: CarouselProps) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-4 h-4 rounded-full hover:-translate-y-1 hover:scale-110 ${
+            className={`w-2 h-2 rounded-full hover:-translate-y-1 hover:scale-110 ${
               index === currentIndex
                 ? "bg-persimmon"
                 : "bg-persimmon opacity-75 hover:opacity-100"

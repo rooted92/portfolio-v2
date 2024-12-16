@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -6,6 +8,7 @@ interface AccordionItem {
     description: string;
     projectHref?: string;
     repoHref?: string;
+    icons: React.ReactNode;
     carousel?: React.ReactNode;
 }
 
@@ -21,43 +24,59 @@ const Accordion = ({ items }: AccordionProps) => {
     };
 
     return (
-        <div className="w-full">
+        <div className="w-full mt-6">
             {items.map((item, index) => (
                 <div
                     key={index}
-                    className="border-b-2 border-[#f45d01] last:border-b-0"
+                    className="border-2 rounded-md border-honeydew"
                 >
                     <button
                         onClick={() => toggleAccordion(index)}
-                        className="flex justify-between items-center w-full px-4 py-3 text-lg font-semibold text-gray-800 focus:outline-none"
+                        className="flex justify-between items-center w-full px-4 py-3 text-lg font-semibold hover:text-persimmon transition-all ease-in"
                     >
                         <span>{item.title}</span>
+                        {openIndex === index ? (
+                            <i
+                                className="icon-[solar--arrow-up-broken]"
+                                role="img"
+                                aria-hidden="true"
+                            ></i>
+                        ) : (
+                            <i
+                                className="icon-[solar--arrow-down-broken]"
+                                role="img"
+                                aria-hidden="true"
+                            ></i>
+                        )}
                     </button>
 
-                    {openIndex === index && (
-                        <div className="px-4 pb-4 text-gray-600">
-                            <p>{item.description}</p>
+                    {/* Accordion Content with Smooth Transition */}
+                    <div
+                        className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-[1000px]" : "max-h-0"
+                            }`}
+                    >
+                        <div className="px-4 pb-4 text-honeydew">
+                            <p className="text-pretty">{item.description}</p>
+                            <div className="flex gap-3 mt-2">{item.icons}</div>
 
-                            {/* Conditionally render project/repo links */}
                             {(item.projectHref || item.repoHref) && (
                                 <div className="mt-4 flex gap-4">
-                                    {/* Project Link */}
                                     {item.projectHref && (
                                         <Link
                                             href={item.projectHref}
-                                            className="text-blue-500 hover:underline"
+                                            target="_blank"
+                                            className="hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in"
                                         >
-                                            View Project
+                                            view project
                                         </Link>
                                     )}
-
-                                    {/* Repo Link */}
                                     {item.repoHref && (
                                         <Link
                                             href={item.repoHref}
-                                            className="text-blue-500 hover:underline"
+                                            target="_blank"
+                                            className="hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in"
                                         >
-                                            View Repo
+                                            view repo
                                         </Link>
                                     )}
                                 </div>
@@ -67,7 +86,7 @@ const Accordion = ({ items }: AccordionProps) => {
                                 <div className="mt-4">{item.carousel}</div>
                             )}
                         </div>
-                    )}
+                    </div>
                 </div>
             ))}
         </div>
