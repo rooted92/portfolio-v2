@@ -16,11 +16,10 @@ const page = () => {
   ]
 
   const pokedexIcons = [
-    { name: 'icon-[simple-icons--react]' },
-    { name: 'icon-[simple-icons--redux]' },
-    { name: 'icon-[simple-icons--typescript]' },
+    { name: 'icon-[simple-icons--html5]' },
+    { name: 'icon-[simple-icons--css3]' },
+    { name: 'icon-[simple-icons--javascript]' },
     { name: 'icon-[simple-icons--tailwindcss]' },
-    { name: 'icon-[simple-icons--firebase]' },
   ]
 
   const lunaLinkImages = [
@@ -37,7 +36,10 @@ const page = () => {
     { src: '/luna-yard-details.png', alt: 'Luna Link yard details page' },
   ]
 
-  const pokedexImages = []
+  const pokedexImages = [
+    {src: '/pokemon-home.png', alt: 'Pokedex home page'},
+    {src: '/pokemon-details.png', alt: 'Pokedex details page'},
+  ]
 
   return (
     <section aria-label='Projects Overview' className='w-full'>
@@ -52,10 +54,11 @@ const page = () => {
         },
         {
           title: 'Pokemon Gallery',
-          description: 'The Pokémon Gallery Project is an interactive web app that showcases over 1,000 Pokémon using data from the PokeAPI. It features infinite scrolling for seamless browsing, a search bar to quickly find specific Pokémon, and detailed information pages displaying stats, abilities, moves, evolutions, and random flavor text. Built with HTML, CSS, and JavaScript, styled using Tailwind CSS, and optimized with lazy loading for smooth performance, the app delivers a responsive experience across all devices. The project is deployed on Vercel for easy access and fast load times. Through this project, I honed my front-end skills, learned to work with APIs effectively, and focused on creating a clean and user-friendly interface.',
+          description: 'The Pokémon Gallery Project is a responsive web app that showcases over 1,000 Pokémon using data from the PokeAPI. It features infinite scrolling, a search bar, and detailed Pokémon pages with stats, abilities, evolutions, and random flavor text. Built with HTML, CSS, JavaScript, and Tailwind CSS, it’s optimized for performance and deployed on Vercel. This project helped me improve my front-end skills and API integration while creating a smooth, user-friendly experience.',
           icons: <Icons iconItems={pokedexIcons} />,
           projectHref: 'https://pokemonvanilla.vercel.app/',
-          repoHref: '',
+          repoHref: 'https://github.com/rooted92/pokemon-vanilla',
+          carousel: <Carousel items={pokedexImages} />
         }
       ]} />
     </section>
