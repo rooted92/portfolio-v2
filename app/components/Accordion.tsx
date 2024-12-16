@@ -52,7 +52,7 @@ const Accordion = ({ items }: AccordionProps) => {
 
                     {/* Accordion Content with Smooth Transition */}
                     <div
-                        className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-[1000px]" : "max-h-0"
+                        className={`overflow-hidden transition-all duration-500 ${openIndex === index ? "max-h-[1000px]" : "max-h-0"
                             }`}
                     >
                         <div className="px-4 pb-4 dark:text-honeydew">
