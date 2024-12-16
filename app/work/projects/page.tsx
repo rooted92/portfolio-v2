@@ -3,7 +3,6 @@ import HeadingOne from '../../ui/HeadingOne'
 import Carousel from '@/app/components/Carousel'
 import Accordion from '@/app/components/Accordion'
 import Icons from '@/app/ui/Icons'
-import Link from 'next/link'
 
 const page = () => {
 
