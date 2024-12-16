@@ -28,7 +28,7 @@ const Accordion = ({ items }: AccordionProps) => {
             {items.map((item, index) => (
                 <div
                     key={index}
-                    className="border-2 rounded-md border-honeydew mb-2"
+                    className="border-2 rounded-md dark:border-honeydew border-licorice mb-2"
                 >
                     <button
                         onClick={() => toggleAccordion(index)}
@@ -55,7 +55,7 @@ const Accordion = ({ items }: AccordionProps) => {
                         className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-[1000px]" : "max-h-0"
                             }`}
                     >
-                        <div className="px-4 pb-4 text-honeydew">
+                        <div className="px-4 pb-4 dark:text-honeydew">
                             <p className="text-pretty">{item.description}</p>
                             <div className="flex gap-3 mt-2">{item.icons}</div>
 
