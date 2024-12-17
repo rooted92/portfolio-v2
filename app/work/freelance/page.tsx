@@ -33,7 +33,7 @@ const page = () => {
         <Icons iconItems={icons} />
       </div>
 
-      <div className="flex flex-col items-center mt-6">
+      <div className="flex flex-col items-center mt-4 mb-8">
         <Image src='/gtr-logo.png' alt='GTR logo' width={2000} height={2000} className='h-32 w-auto' />
 
         <Carousel items={[
@@ -45,7 +45,7 @@ const page = () => {
 
       <div className="flex flex-col items-center mt-6">
 
-        <h2 className={`flex flex-col font-extrabold items-center justify-center capitalize text-lg tracking-wider ${bebasNeue.className}`}><span>adelman</span><span>auto</span></h2>
+        <h2 className={`flex flex-col font-extrabold items-center justify-center capitalize text-lg tracking-wider mb-4 ${bebasNeue.className}`}><span>adelman</span><span>auto</span></h2>
 
         <Carousel items={[
           { src: '/adelman-home.png', alt: 'Adelman Auto home page' },

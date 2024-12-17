@@ -28,7 +28,7 @@ const Accordion = ({ items }: AccordionProps) => {
             {items.map((item, index) => (
                 <div
                     key={index}
-                    className="border-2 rounded-md dark:border-honeydew border-licorice mb-2"
+                    className="border-2 rounded-md dark:border-honeydew border-licorice mb-3"
                 >
                     <button
                         onClick={() => toggleAccordion(index)}

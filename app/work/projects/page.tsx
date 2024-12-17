@@ -38,6 +38,9 @@ const page = () => {
   const pokedexImages = [
     {src: '/pokemon-home.png', alt: 'Pokedex home page'},
     {src: '/pokemon-details.png', alt: 'Pokedex details page'},
+    {src: '/pokemon-home-light.png', alt: 'Pokedex home page light mode'},
+    {src: '/pokemon-details-light.png', alt: 'Pokedex details page light mode'},
+    {src: '/pokemon-jolteon.png', alt: 'Pokedex Jolteon details'},
   ]
 
   return (
