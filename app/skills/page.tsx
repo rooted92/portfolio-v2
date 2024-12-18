@@ -227,6 +227,12 @@ const page = () => {
       url: 'https://platform.openai.com/docs/models/chatgpt',
       iconName: 'icon-[arcticons--openai-chatgpt]',
     },
+    {
+      name: 'shadcn-ui',
+      tag: 'frontend',
+      url: 'https://ui.shadcn.com/',
+      iconName: 'icon-[simple-icons--shadcnui]',
+    },
   ]
   return (
     <section aria-label='Skills categorized by frontend, backend WordPress and tools' className='container mx-auto flex flex-col items-center'>
