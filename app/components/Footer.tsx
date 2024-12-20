@@ -65,6 +65,7 @@ const Footer = () => {
               <Link
                 key={index}
                 href={link.href}
+                rel='noopener noreferrer'
                 title={link.title}
                 aria-label={link.ariaLabelText}
                 target={link.targetBlank ? '_blank' : '_self'}

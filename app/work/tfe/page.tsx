@@ -1,6 +1,5 @@
 import HeadingOne from '@/app/ui/HeadingOne'
 import React from 'react'
-import Link from 'next/link'
 import Carousel from '@/app/components/Carousel'
 import Image from 'next/image'
 import Icons from '@/app/ui/Icons'
@@ -19,7 +18,7 @@ const page = () => {
   return (
     <section>
       <HeadingOne text='Trinchero Family Estates' />
-      <p className='text-pretty'>At TFE, I worked with a talented team to improve web accessibility for <Link href={'https://www.sutterhome.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Sutter Home</strong></Link> and <Link href={'https://www.neyersvineyards.com/'} target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'><strong>Neyers Vineyards</strong></Link>, raising WCAG 2.1 AA compliance to 97%. I also developed custom WordPress solutions and collaborated on enhancing functionality for multiple brand websites.</p>
+      <p className='text-pretty'>At TFE, I worked with a talented team to improve web accessibility for <a href={'https://www.sutterhome.com/'} rel='noopener noreferrer' target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'><strong>Sutter Home</strong></a> and <a href={'https://www.neyersvineyards.com/'} rel='noopener noreferrer' target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'><strong>Neyers Vineyards</strong></a>, raising WCAG 2.1 AA compliance to 97%. I also developed custom WordPress solutions and collaborated on enhancing functionality for multiple brand websites.</p>
 
       <div className='flex gap-3 mt-2'>
         <Icons iconItems={icons} />
@@ -53,7 +52,7 @@ const page = () => {
 
       <div className="border-t border-t-persimmon mt-20 mb-8 py-8 px-4">
         <blockquote className='text-lg mb-4'>&ldquo;Pedro is highly knowledgeable in web accessibility and takes pride in his coding skills. His positive attitude and strong work ethic make him a valuable asset to any team.&rdquo;</blockquote>
-        <Link href={'https://www.linkedin.com/in/mark-rioux/'} target='_blank' className='hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'>Mark Rioux</Link>
+        <a href={'https://www.linkedin.com/in/mark-rioux/'} rel='noopener noreferrer' target='_blank' className='hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'>Mark Rioux</a>
         <p className='text-sm text-hookersGreen'>Manager, Web Dev & Integration at Trinchero Family Estates</p>
       </div>
     </section>

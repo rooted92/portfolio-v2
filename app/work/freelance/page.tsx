@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import Carousel from '@/app/components/Carousel'
 import { Bebas_Neue } from 'next/font/google'
-import Link from 'next/link'
 import Icons from '@/app/ui/Icons'
 
 const bebasNeue = Bebas_Neue(
@@ -27,7 +26,7 @@ const page = () => {
   return (
     <section>
       <HeadingOne text='Freelance' />
-      <p className='text-pretty'>I’ve developed responsive and intuitive websites for <Link href='https://gtr-website.vercel.app/' target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'>Galo&apos;s Truck & Trailer Repair</Link> and <Link href='https://adelman-auto.vercel.app/' target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'>Adelman Auto</Link> using Next.js, TypeScript, and Tailwind CSS, designing layouts directly through coding and drawing inspiration from modern web design trends.</p>
+      <p className='text-pretty'>I’ve developed responsive and intuitive websites for <a href='https://gtr-website.vercel.app/' rel='noopener noreferrer' target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'>Galo&apos;s Truck & Trailer Repair</a> and <a href='https://adelman-auto.vercel.app/' rel='noopener noreferrer' target='_blank' className='hover:text-citrine text-nowrap underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in'>Adelman Auto</a> using Next.js, TypeScript, and Tailwind CSS, designing layouts directly through coding and drawing inspiration from modern web design trends.</p>
 
       <div className='flex gap-3 mt-2'>
         <Icons iconItems={icons} />

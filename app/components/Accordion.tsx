@@ -1,6 +1,5 @@
 'use client';
 
-import Link from "next/link";
 import React, { useState } from "react";
 
 interface AccordionItem {
@@ -62,22 +61,24 @@ const Accordion = ({ items }: AccordionProps) => {
                             {(item.projectHref || item.repoHref) && (
                                 <div className="mt-4 flex gap-4">
                                     {item.projectHref && (
-                                        <Link
+                                        <a
                                             href={item.projectHref}
+                                            rel="noopener noreferrer"
                                             target="_blank"
                                             className="hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in"
                                         >
                                             view project
-                                        </Link>
+                                        </a>
                                     )}
                                     {item.repoHref && (
-                                        <Link
+                                        <a
                                             href={item.repoHref}
+                                            rel="noopener noreferrer"
                                             target="_blank"
                                             className="hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in"
                                         >
                                             view repo
-                                        </Link>
+                                        </a>
                                     )}
                                 </div>
                             )}

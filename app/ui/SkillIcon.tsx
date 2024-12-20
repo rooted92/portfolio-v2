@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 interface Icon {
     name: string,
@@ -15,16 +14,17 @@ interface SkillIconProps {
 
 const SkillIcon = ({ icon }: SkillIconProps) => {
     return (
-        <Link
+        <a
             href={icon.url}
             title={icon.name}
+            rel='noopener noreferrer'
             target='_blank'
             aria-label={`Visit ${icon.name} official website. Opens in new tab.`}
             className='text-licorice dark:text-honeydew hover:text-citrine border-b-2 hover:border-b-transparent border-b-persimmon hover:scale-125 text-3xl transition-all ease-linear'>
             <i
                 className={`${icon.iconName} ${icon.iconClasses}  `} role="img"
                 aria-hidden="true" />
-        </Link>
+        </a>
     )
 }
 
