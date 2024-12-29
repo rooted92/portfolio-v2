@@ -1,17 +1,8 @@
 import HeadingOne from '@/app/ui/HeadingOne'
 import React from 'react'
-// import Image from 'next/image'
 import Carousel from '@/app/components/Carousel'
-import { Bebas_Neue } from 'next/font/google'
 import Icons from '@/app/ui/Icons'
 import Accordion from '@/app/components/Accordion'
-
-const bebasNeue = Bebas_Neue(
-  {
-    subsets: ['latin'],
-    weight: ['400'],
-  }
-)
 
 const page = () => {
 
@@ -79,17 +70,17 @@ const page = () => {
           carousel: <Carousel items={AdelmanImages} />
         },
         {
+          title: 'Peak Performance Refrigiration',
+          description: "This project involved creating a website for a refrigeration company in the Bay Area. The site was built with Next.js, React, TypeScript, and Tailwind CSS, and features a clean, professional design that highlights the company's services and expertise.",
+          icons: <Icons iconItems={PeakIcons} />,
+          carousel: <Carousel items={PeakImages} />
+        },
+        {
           title: "Galo's Truck & Trailer Repair",
           description: "GTR Mobile Fleet Repair is a professional website showcasing mobile repair services in Sonoma and Napa counties. It focuses on creating a responsive, user-friendly landing page that communicates value clearly. Built with Next.js, React, TypeScript, and Tailwind CSS, it features modern, dynamic design.",
           icons: <Icons iconItems={GTRIcons} />,
           carousel: <Carousel items={GTRImages} />
         },
-        {
-          title: 'Peak Performance Refrigiration',
-          description: "This project involved creating a website for a refrigeration company in the Bay Area. The site was built with Next.js, React, TypeScript, and Tailwind CSS, and features a clean, professional design that highlights the company's services and expertise.",
-          icons: <Icons iconItems={PeakIcons} />,
-          carousel: <Carousel items={PeakImages} />
-        }
       ]} />
     </section>
   )
