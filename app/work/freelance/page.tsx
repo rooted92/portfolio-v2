@@ -55,8 +55,6 @@ const page = () => {
     { src: '/peak-contact.png', alt: 'Peak Performance Refrigeration contact page' }
   ]
 
-  // const
-
   return (
     <section>
       <HeadingOne text='Freelance' />
