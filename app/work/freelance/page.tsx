@@ -65,19 +65,23 @@ const page = () => {
           title: 'Adelman Auto',
           description: "I built a website for Adelman Auto, a mobile mechanic service. This project taught me the value of clear communication, practical design, and using modern tools effectively. The site was created with Next.js, TypeScript, Tailwind CSS, and MongoDB with Mongoose, providing a responsive platform to help attract more customers. It also features a review form to collect feedback from clients and was deployed on Vercel.",
           icons: <Icons iconItems={AdelmanIcons} />,
-          carousel: <Carousel items={AdelmanImages} />
+          carousel: <Carousel items={AdelmanImages} />,
+          projectHref: 'https://adelmanauto.com/',
         },
         {
           title: 'Peak Performance Refrigiration',
           description: "This project involved creating a website for a refrigeration company in the Bay Area. The site was built with Next.js, React, TypeScript, and Tailwind CSS, and features a clean, professional design that highlights the company's services and expertise.",
           icons: <Icons iconItems={PeakIcons} />,
-          carousel: <Carousel items={PeakImages} />
+          carousel: <Carousel items={PeakImages} />,
+          projectHref: 'https://peakperformance-topaz.vercel.app/',
+          repoHref: 'https://github.com/rooted92/peak-performance',
         },
         {
           title: "Galo's Truck & Trailer Repair",
           description: "GTR Mobile Fleet Repair is a professional website showcasing mobile repair services in Sonoma and Napa counties. It focuses on creating a responsive, user-friendly landing page that communicates value clearly. Built with Next.js, React, TypeScript, and Tailwind CSS, it features modern, dynamic design.",
           icons: <Icons iconItems={GTRIcons} />,
-          carousel: <Carousel items={GTRImages} />
+          carousel: <Carousel items={GTRImages} />,
+          projectHref: 'https://gtr-website.vercel.app/',
         },
       ]} />
     </section>

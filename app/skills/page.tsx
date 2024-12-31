@@ -233,6 +233,12 @@ const page = () => {
       url: 'https://ui.shadcn.com/',
       iconName: 'icon-[simple-icons--shadcnui]',
     },
+    {
+      name: 'Resend',
+      tag: 'tools',
+      url: 'https://resend.io/',
+      iconName: 'icon-[simple-icons--resend]',
+    }
   ]
   return (
     <section aria-label='Skills categorized by frontend, backend WordPress and tools' className='container mx-auto flex flex-col items-center'>
