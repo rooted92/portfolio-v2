@@ -1,6 +1,5 @@
 import React from 'react'
 import HeadingOne from '../ui/HeadingOne'
-// import Link from 'next/link'
 import Tabs from '../ui/Tabs'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
