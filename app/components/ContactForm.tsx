@@ -58,7 +58,7 @@ const ContactForm = () => {
                 <input
                     type="hidden"
                     name="_next"
-                    value="https://pcdev.vercel.app/thanks" />
+                    value="https://pedroc.dev/thanks" />
 
                 <button
                     type='submit'
