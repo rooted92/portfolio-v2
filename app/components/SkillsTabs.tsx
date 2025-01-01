@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import SkillIcon from '../ui/SkillIcon';
+import { motion } from 'motion/react';
 
 interface Tab {
     name: string;
@@ -75,13 +76,23 @@ const SkillsTabs = ({ tabs, skills }: SkillsTabsProps) => {
                 ))}
             </div>
             <div
-            id={activeTab ? `${activeTab}-skills` : 'all-skills'}
-            role='region'
-            aria-labelledby={activeTab ? `tab-${activeTab}` : 'tab-all'}
-            className='flex flex-wrap items-center justify-center gap-6 xxs:gap-8 xs:gap-10 w-11/12 xxs:w-8/12 md:w-1/2'>
+                id={activeTab ? `${activeTab}-skills` : 'all-skills'}
+                role='region'
+                aria-labelledby={activeTab ? `tab-${activeTab}` : 'tab-all'}
+                className='flex flex-wrap items-center justify-center gap-6 xxs:gap-8 xs:gap-10 w-11/12 xxs:w-8/12 md:w-1/2'>
                 {
-                    filteredSkills.map((skill) => (
-                        <SkillIcon key={skill.name} icon={skill} />
+                    filteredSkills.map((skill, index) => (
+                        <motion.div
+                            key={skill.name}
+                            initial={{ rotateY: 90, opacity: 0 }}
+                            animate={{ rotateY: 0, opacity: 1 }}
+                            transition={{
+                                duration: 0.4,
+                                delay: index * 0.1,
+                                ease: 'easeOut',
+                            }}>
+                            <SkillIcon key={skill.name} icon={skill} />
+                        </motion.div>
                     ))
                 }
             </div>

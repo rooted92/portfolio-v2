@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
+import { motion } from "motion/react";
 
 interface AccordionItem {
     title: string;
@@ -23,11 +24,15 @@ const Accordion = ({ items }: AccordionProps) => {
     };
 
     return (
-        <div className="w-full mt-6">
+        <div
+            className="w-full mt-6">
             {items.map((item, index) => (
-                <div
+                <motion.div
                     key={index}
                     className="border-2 rounded-md dark:border-honeydew border-licorice mb-3"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                     <button
                         onClick={() => toggleAccordion(index)}
@@ -88,7 +93,7 @@ const Accordion = ({ items }: AccordionProps) => {
                             )}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );

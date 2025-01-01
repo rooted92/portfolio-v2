@@ -1,6 +1,10 @@
+'use client';
+
 import React from 'react'
 import HeadingOne from '../ui/HeadingOne'
 import Cert from '../ui/Cert'
+
+import { motion } from 'motion/react'
 
 interface Certs {
   url: string,
@@ -91,8 +95,16 @@ const page = () => {
       <HeadingOne text="Certifications" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 sm:mt-16 mx-4">
         {
-          certs.map(cert => (
-            <Cert key={cert.title} cert={cert} />))
+          certs.map((cert, index) => (
+            <motion.div
+              key={cert.title}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.2, delay: index * 0.1 }}>
+              <Cert key={cert.title} cert={cert} />
+            </motion.div>
+          ))
         }
       </div>
     </section>
