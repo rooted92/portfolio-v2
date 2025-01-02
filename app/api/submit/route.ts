@@ -2,6 +2,9 @@ import { NextResponse, NextRequest } from 'next/server';
 import { Resend } from 'resend';
 import mongoose from 'mongoose';
 import ContactSubmissionEmail from '../../components/ContactSubmissionEmail';
+import { connectToDatabase } from '@/app/lib/db';
+
+connectToDatabase();
 
 if (!process.env.RESEND_API_KEY) {
   throw new Error('RESEND_API_KEY is not defined in environment variables');
