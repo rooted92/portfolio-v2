@@ -141,7 +141,21 @@ const ContactForm = () => {
           required
         />
 
-        <ReCAPTCHA sitekey={siteKey!} onChange={handleRecaptchaChange} />
+        <div className="flex w-full justify-start items-center m-0 p-0">
+          <ReCAPTCHA sitekey={siteKey!} onChange={handleRecaptchaChange} className='m-0 p-0' />
+        </div>
+
+        <p className="text-xs text-gray-500">
+          This site is protected by Google reCAPTCHA, and your use is subject to Google’s{' '}
+          <a href="https://policies.google.com/privacy" target="_blank" className="text-persimmon hover:underline" rel='noreferrer noopener'>
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a href="https://policies.google.com/terms" target="_blank" className="text-persimmon hover:underline" rel='noreferrer noopener'>
+            Terms of Service
+          </a>.
+        </p>
+
 
         {formError && <p className="text-red-500 text-sm mt-2">{formError}</p>}
 

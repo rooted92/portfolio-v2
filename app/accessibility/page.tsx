@@ -26,7 +26,7 @@ const page = () => {
 
       <h2 className='text-xl text-persimmon mb-4 font-semibold'>Third-Party Services</h2>
       <p className='pb-8 mb-4 border-b border-b-citrine'>
-        This site uses <Link href={'https://formsubmit.co/'} target='_blank' className='hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline  transition-all ease-in'>FormSubmit</Link> for managing form submissions. While I strive to ensure third-party services align with accessibility standards, I encourage users to visit their Accessibility Statement (if available) for more details.
+        This site uses <Link href={'https://www.google.com/recaptcha/about/'} target='_blank' className='hover:text-citrine underline decoration-persimmon decoration-2 hover:no-underline transition-all ease-in' rel='noreferrer nopener'>Google reCAPTCHA</Link> to secure form submissions and prevent spam. While I strive to ensure third-party services align with accessibility standards, I encourage users to visit their Accessibility Statement (if available) for more details.
       </p>
 
       <h2 className='text-xl text-persimmon mb-4 font-semibold'>Testing and Monitoring</h2>
